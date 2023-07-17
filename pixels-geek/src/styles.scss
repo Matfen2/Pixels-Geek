@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin: auto;
+}
+
+// MIXIN & ROOT
+$firstColor: azure;
+
+.contain {
+    height: 800px;
+    background-color: darkred;
+    .show {
+        .navbar {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            .navbar-brand {
+                .img-fluid {
+                    height: 160px;
+                    max-width: 340px;
+                }
+            }
+            #btnBar {
+                display: none;
+            }
+            .navbar-nav {
+                column-gap: 120px;
+                display: flex;
+                margin-right: 10px;
+                align-items: center;
+                flex-direction: row;
+                .nav-item {
+                    .nav-link {
+                        font-size: 1.5em;
+                        color: $firstColor;
+                        font-family: spantaran;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+                #btnAccount {
+                    cursor: pointer;
+                    font-size: 1.8em;
+                    color: $firstColor;
+                    border: transparent;
+                    background: transparent;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .univers {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 230%);
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .listUnivers {
+                            padding: 15px;
+                            display: flex;
+                            column-gap: 280px;
+                            align-items: center;
+                            flex-direction: row;
+                            justify-content: center;
+                            .img-fluid {
+                                opacity: 0.8;
+                                height: 160px;
+                                cursor: pointer;
+                                max-width: 260px;
+                                transition: all 0.25ms ease;
+                                &:hover {
+                                    opacity: 1.0;
+                                    transform: scale(1.2);
+                                }
+                            }
+                        }
+                    }
+                }
+                .carousel-control-prev, .carousel-control-next {
+                    .carousel-control-prev-icon, .carousel-control-next-icon {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.why {
+    height: 120px;
+    background-color: rgb(51, 51, 51);
+    .reponse {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        letter-spacing: 7px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        font-size: 1.8em;
+        color: $firstColor;
+        font-family: futureEarth;
+    }
+}
+
+.news {
+    position: relative;
+    width: 100%;
+    .containNews {
+        position: relative;
+        .newsBackground {
+            position: relative;
+            top: 50%;
+            left: 0;
+            height: 450px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .listNews {
+            .lastNews {
+                color: $firstColor;
+            }
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            column-gap: 120px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            .col-lg-4 {
+                .card {
+                    background: transparent;
+                    height: 260px;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    .card-body {
+                        .newsArticles {
+                            padding: 10px;
+                            opacity: 0.0;
+                            cursor: pointer;
+                            height: 62px;
+                            position: relative;
+                            top: 90%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background-color: black;
+                            .titleNews {
+                                position: relative;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                font-size: 0.8em;
+                                color: $firstColor;
+                                text-align: center;
+                                font-family: oldRepublic;
+                                
+                            }
+                            &:hover {
+                                opacity: 1.0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FONTS
+@font-face {
+    font-family: oldRepublic;
+    src: url('./assets/fonts/OldRepublic.ttf');
+}
+
+@font-face {
+    font-family: spantaran;
+    src: url('./assets/fonts/Spantaran.ttf');
+}
+
+@font-face {
+    font-family: futureEarth;
+    src: url('./assets/fonts/futureEarth.ttf');
+}
