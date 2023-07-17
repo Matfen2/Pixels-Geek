@@ -11,20 +11,20 @@ body {
   height: 800px;
   background-color: darkred;
 }
-.contain .show .navbar {
+.contain .navbar {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
-.contain .show .navbar .navbar-brand .img-fluid {
+.contain .navbar .navbar-brand .img-fluid {
   height: 160px;
   max-width: 340px;
 }
-.contain .show .navbar #btnBar {
+.contain .navbar #btnBar {
   display: none;
 }
-.contain .show .navbar .navbar-nav {
+.contain .navbar .navbar-nav {
   -moz-column-gap: 120px;
        column-gap: 120px;
   display: flex;
@@ -32,31 +32,31 @@ body {
   align-items: center;
   flex-direction: row;
 }
-.contain .show .navbar .navbar-nav .nav-item .nav-link {
+.contain .navbar .navbar-nav .nav-item .nav-link {
   font-size: 1.5em;
   color: azure;
   font-family: spantaran;
 }
-.contain .show .navbar .navbar-nav .nav-item .nav-link:hover {
+.contain .navbar .navbar-nav .nav-item .nav-link:hover {
   opacity: 0.8;
 }
-.contain .show .navbar .navbar-nav #btnAccount {
+.contain .navbar .navbar-nav #btnAccount {
   cursor: pointer;
   font-size: 1.8em;
   color: azure;
   border: transparent;
   background: transparent;
 }
-.contain .show .navbar .navbar-nav #btnAccount:hover {
+.contain .navbar .navbar-nav #btnAccount:hover {
   opacity: 0.8;
 }
-.contain .show .univers {
+.contain .univers {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 230%);
 }
-.contain .show .univers .carousel .carousel-inner .carousel-item .listUnivers {
+.contain .univers .carousel .carousel-inner .carousel-item .listUnivers {
   padding: 15px;
   display: flex;
   -moz-column-gap: 280px;
@@ -65,18 +65,22 @@ body {
   flex-direction: row;
   justify-content: center;
 }
-.contain .show .univers .carousel .carousel-inner .carousel-item .listUnivers .img-fluid {
+.contain .univers .carousel .carousel-inner .carousel-item .listUnivers .img-fluid {
   opacity: 0.8;
-  height: 160px;
+  height: 150px;
   cursor: pointer;
-  max-width: 260px;
+  max-width: 340px;
   transition: all 0.25ms ease;
 }
-.contain .show .univers .carousel .carousel-inner .carousel-item .listUnivers .img-fluid:hover {
+.contain .univers .carousel .carousel-inner .carousel-item .listUnivers .img-fluid:hover {
   opacity: 1;
   transform: scale(1.2);
 }
-.contain .show .univers .carousel .carousel-control-prev .carousel-control-prev-icon, .contain .show .univers .carousel .carousel-control-prev .carousel-control-next-icon, .contain .show .univers .carousel .carousel-control-next .carousel-control-prev-icon, .contain .show .univers .carousel .carousel-control-next .carousel-control-next-icon {
+.contain .univers .carousel .carousel-control-prev, .contain .univers .carousel .carousel-control-next {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+.contain .univers .carousel .carousel-control-prev .carousel-control-prev-icon, .contain .univers .carousel .carousel-control-prev .carousel-control-next-icon, .contain .univers .carousel .carousel-control-next .carousel-control-prev-icon, .contain .univers .carousel .carousel-control-next .carousel-control-next-icon {
   color: black;
 }
 
@@ -107,45 +111,51 @@ body {
   position: relative;
   top: 50%;
   left: 0;
-  height: 450px;
+  height: 60vh;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .news .containNews .listNews {
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -moz-column-gap: 120px;
-       column-gap: 120px;
+}
+.news .containNews .listNews .lastNews {
+  color: azure;
+  margin-bottom: 60px;
+  font-family: oldRepublic;
+}
+.news .containNews .listNews .containCards {
   display: flex;
+  -moz-column-gap: 90px;
+       column-gap: 90px;
   align-items: center;
   flex-direction: row;
   justify-content: center;
 }
-.news .containNews .listNews .lastNews {
-  color: azure;
-}
-.news .containNews .listNews .col-lg-4 .card {
+.news .containNews .listNews .containCards .col-lg-4 .card {
   background: transparent;
-  height: 260px;
+  height: 280px;
+  max-width: 320px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.news .containNews .listNews .col-lg-4 .card .card-body .newsArticles {
+.news .containNews .listNews .containCards .col-lg-4 .card .card-body .newsArticles {
   padding: 10px;
   opacity: 0;
   cursor: pointer;
-  height: 62px;
+  height: 60px;
   position: relative;
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: black;
 }
-.news .containNews .listNews .col-lg-4 .card .card-body .newsArticles .titleNews {
+.news .containNews .listNews .containCards .col-lg-4 .card .card-body .newsArticles .titleNews {
   position: relative;
   top: 50%;
   left: 50%;
@@ -155,8 +165,59 @@ body {
   text-align: center;
   font-family: oldRepublic;
 }
-.news .containNews .listNews .col-lg-4 .card .card-body .newsArticles:hover {
+.news .containNews .listNews .containCards .col-lg-4 .card .card-body .newsArticles:hover {
   opacity: 1;
+}
+.news .containNews .listNews .otherNews {
+  margin-top: 60px;
+}
+.news .containNews .listNews .otherNews a {
+  font-size: 1.4em;
+  color: azure;
+  font-family: spantaran;
+  text-decoration: none;
+}
+.news .containNews .listNews .otherNews a:hover {
+  text-shadow: 0 0 15px #FFF, 9px -21px 5px rgba(206, 89, 55, 0);
+}
+.news .containNews .listNews .footer {
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.news .containNews .listNews .footer .copyrigth {
+  font-size: 1.4em;
+  margin-left: -410px;
+  color: azure;
+  font-family: futureEarth;
+}
+.news .containNews .listNews .footer .listSocial {
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-right: -410px;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+.news .containNews .listNews .footer .listSocial li a {
+  font-size: 1.3em;
+  color: azure;
+  text-decoration: none;
+}
+.news .containNews .listNews .footer .listSocial li a .fa-facebook-f:hover {
+  color: #10a103;
+  text-shadow: 0 0 15px #10a103, 9px -21px 5px rgba(206, 89, 55, 0);
+}
+.news .containNews .listNews .footer .listSocial li a .fa-twitter:hover {
+  color: #0096d1;
+  text-shadow: 0 0 15px #0096d1, 9px -21px 5px rgba(206, 89, 55, 0);
+}
+.news .containNews .listNews .footer .listSocial li a .fa-youtube:hover {
+  color: #9b0000;
+  text-shadow: 0 0 15px #9b0000, 9px -21px 5px rgba(206, 89, 55, 0);
 }
 
 @font-face {
