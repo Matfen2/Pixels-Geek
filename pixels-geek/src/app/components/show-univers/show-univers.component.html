@@ -15,36 +15,59 @@
       <li class="nav-item">
         <a href="##" class="nav-link">GOODIES</a>
       </li>
-      <button type="button" id="btnLogIn">
+      <button type="button" id="btnAccount">
         <i class="fa-solid fa-user"></i>
       </button>
     </ul>
   </div>
   <div class="show">
-    <div class="carousel slide" id="carouselUnivers">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="row">
-                    <div *ngFor="let saga of sagas" class="col-lg-4 saga">
-                        <img
-                        [src]="saga.logo"
-                        class="img-fluid w-100"
-                        alt="pictSagaLogo"
-                        (mouseover)="showSagaUnivers(saga.wallpaper)"
-                        />
-                    </div>
-                </div>
+    <div id="carouselUnivers" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div *ngFor="let saga of sagasOne" class="col-lg-4">
+              <img
+                [src]="saga.logo"
+                alt="pictSaga"
+                class="img-fluid w-100 saga"
+                (mousemove)="showSaga(saga.wallpaper)"
+              />
             </div>
-            
-            <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselUnivers">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Prev</span>
-            </button>
-            <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselUnivers">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </div>
         </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div *ngFor="let saga of sagasTwo" class="col-lg-4">
+              <img
+                [src]="saga.logo"
+                alt="pictSaga"
+                class="img-fluid w-100 saga"
+                (mousemove)="showSaga(saga.wallpaper)"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div *ngFor="let saga of sagasThree" class="col-lg-4">
+              <img
+                [src]="saga.logo"
+                alt="pictSaga"
+                class="img-fluid w-100 saga"
+                (mousemove)="showSaga(saga.wallpaper)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselUnivers" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselUnivers" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
 </div>

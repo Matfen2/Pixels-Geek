@@ -12,7 +12,7 @@ interface Saga {
   styleUrls: ['./show-univers.component.css'],
 })
 export class ShowUniversComponent {
-  sagas: Saga[] = [
+  sagasOne: Saga[] = [
     {
       id: 1,
       logo: '/assets/picts/saga/falloutLogo.png',
@@ -28,6 +28,9 @@ export class ShowUniversComponent {
       logo: '/assets/picts/saga/doomLogo.png',
       wallpaper: '/assets/picts/saga/doomWallpaper.jpg',
     },
+  ];
+
+  sagasTwo: Saga[] = [
     {
       id: 4,
       logo: '/assets/picts/saga/theLastOfUsLogo.png',
@@ -43,6 +46,9 @@ export class ShowUniversComponent {
       logo: '/assets/picts/saga/massEffectLogo.png',
       wallpaper: '/assets/picts/saga/massEffectWallpaper.jpg',
     },
+  ];
+
+  sagasThree: Saga[] = [
     {
       id: 7,
       logo: '/assets/picts/saga/bioshockLogo.png',
@@ -62,7 +68,7 @@ export class ShowUniversComponent {
 
   currentWallpaper: string = '';
 
-  showSagaUnivers(wallpaper: string) {
+  showSaga(wallpaper: string) {
     this.currentWallpaper = wallpaper;
   }
 }

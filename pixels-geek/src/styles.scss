@@ -16,9 +16,10 @@ $fiveColor: #0096d1;
 $sixColor: #9b0000;
 
 .contain {
-    height: 800px;
-    background-color: darkred;
-    
+    height: 930px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
         .navbar {
             display: flex;
             align-items: center;
@@ -34,7 +35,7 @@ $sixColor: #9b0000;
                 display: none;
             }
             .navbar-nav {
-                column-gap: 120px;
+                column-gap: 100px;
                 display: flex;
                 margin-right: 10px;
                 align-items: center;
@@ -61,30 +62,28 @@ $sixColor: #9b0000;
                 }
             }
         }
-        .univers {
+        .show {
             position: relative;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, 230%);
+            transform: translate(-50%, 40%);
             .carousel {
                 .carousel-inner {
                     .carousel-item {
-                        .listUnivers {
-                            padding: 15px;
-                            display: flex;
-                            column-gap: 280px;
-                            align-items: center;
-                            flex-direction: row;
-                            justify-content: center;
-                            .img-fluid {
-                                opacity: 0.8;
-                                height: 150px;
-                                cursor: pointer;
-                                max-width: 340px;
-                                transition: all 0.25ms ease;
-                                &:hover {
-                                    opacity: 1.0;
-                                    transform: scale(1.2);
+                        .row {
+                            text-align: center;
+                            .col-lg-4 {
+                                .img-fluid {
+                                    opacity: 0.8;
+                                    height: 150px;
+                                    cursor: pointer;
+                                    max-width: 340px;
+                                    transform: scale(0.8);
+                                    transition: all 0.25ms ease;
+                                    &:hover {
+                                        opacity: 1.0;
+                                        transform: scale(1.0);
+                                    }
                                 }
                             }
                         }
@@ -127,7 +126,7 @@ $sixColor: #9b0000;
             position: relative;
             top: 50%;
             left: 0;
-            height: 60vh;
+            height: 55vh;
             width: 100%;
             object-fit: cover;
         }
@@ -139,12 +138,12 @@ $sixColor: #9b0000;
             transform: translate(-50%, -50%);
             .lastNews {
                color: $firstColor;
-               margin-bottom: 60px;
                font-family: oldRepublic;
             }
             .containCards {
-                display: flex;
-                column-gap: 90px;
+                column-gap: 100px;
+                display: flex;    
+                margin: 40px auto;           
                 align-items: center;
                 flex-direction: row;
                 justify-content: center;
@@ -187,7 +186,7 @@ $sixColor: #9b0000;
                 }
             }
             .otherNews {
-                margin-top: 60px;
+                margin-top: 20px;
                 a {
                     font-size: 1.4em;
                     color: $firstColor;
@@ -200,7 +199,7 @@ $sixColor: #9b0000;
             }
             .footer {
                 display: flex;
-                margin: 20px auto;
+                margin: 0px auto;
                 align-items: center;
                 flex-direction: row;
                 justify-content: space-between;
@@ -239,6 +238,60 @@ $sixColor: #9b0000;
                                     color: $sixColor;
                                     text-shadow: 0 0 15px $sixColor, 9px -21px 5px rgba(206,89,55,0);
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#tlouArticle, #rdrArticle, #ac4BlackFlagArticle, #cyberpunk2077Article {
+    .modal-dialog {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 1800px;
+        .modal-content {
+            
+            background-image: url('/assets/picts/news/articles/articleBackground.jpeg');
+            #btnCloseModal {
+                position: absolute;
+                top: -3%;
+                right: -2%;
+                font-size: 1.8em;
+                color: $thirdColor;
+                border: transparent;
+                background: transparent;
+                transform: translate(-50%, -50%);
+                &:hover {
+                    color: $firstColor;
+                }
+            }
+            .row {
+                overflow: auto;
+                .col-lg-5 {
+                    .img-fluid {
+                        height: 100%;
+                        max-width: 100%;
+                    }
+                }
+                .col-lg-7 {
+                    padding: 20px;
+                    p {
+                        color: $firstColor;
+                        font-family: oldRepublic;
+                    }
+                    .info {
+                        padding: 10px;
+                        margin-bottom: 20px;
+                    
+                        ul {
+                            li {
+                                font-style: italic;
+                                color: $firstColor;
+                                font-family: oldRepublic;
                             }
                         }
                     }

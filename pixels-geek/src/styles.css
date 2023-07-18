@@ -8,8 +8,10 @@ body {
 }
 
 .contain {
-  height: 800px;
-  background-color: darkred;
+  height: 930px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .contain .navbar {
   display: flex;
@@ -25,8 +27,8 @@ body {
   display: none;
 }
 .contain .navbar .navbar-nav {
-  -moz-column-gap: 120px;
-       column-gap: 120px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   display: flex;
   margin-right: 10px;
   align-items: center;
@@ -50,37 +52,32 @@ body {
 .contain .navbar .navbar-nav #btnAccount:hover {
   opacity: 0.8;
 }
-.contain .univers {
+.contain .show {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 230%);
+  transform: translate(-50%, 40%);
 }
-.contain .univers .carousel .carousel-inner .carousel-item .listUnivers {
-  padding: 15px;
-  display: flex;
-  -moz-column-gap: 280px;
-       column-gap: 280px;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
+.contain .show .carousel .carousel-inner .carousel-item .row {
+  text-align: center;
 }
-.contain .univers .carousel .carousel-inner .carousel-item .listUnivers .img-fluid {
+.contain .show .carousel .carousel-inner .carousel-item .row .col-lg-4 .img-fluid {
   opacity: 0.8;
   height: 150px;
   cursor: pointer;
   max-width: 340px;
+  transform: scale(0.8);
   transition: all 0.25ms ease;
 }
-.contain .univers .carousel .carousel-inner .carousel-item .listUnivers .img-fluid:hover {
+.contain .show .carousel .carousel-inner .carousel-item .row .col-lg-4 .img-fluid:hover {
   opacity: 1;
-  transform: scale(1.2);
+  transform: scale(1);
 }
-.contain .univers .carousel .carousel-control-prev, .contain .univers .carousel .carousel-control-next {
+.contain .show .carousel .carousel-control-prev, .contain .show .carousel .carousel-control-next {
   margin-left: -30px;
   margin-right: -30px;
 }
-.contain .univers .carousel .carousel-control-prev .carousel-control-prev-icon, .contain .univers .carousel .carousel-control-prev .carousel-control-next-icon, .contain .univers .carousel .carousel-control-next .carousel-control-prev-icon, .contain .univers .carousel .carousel-control-next .carousel-control-next-icon {
+.contain .show .carousel .carousel-control-prev .carousel-control-prev-icon, .contain .show .carousel .carousel-control-prev .carousel-control-next-icon, .contain .show .carousel .carousel-control-next .carousel-control-prev-icon, .contain .show .carousel .carousel-control-next .carousel-control-next-icon {
   color: black;
 }
 
@@ -111,7 +108,7 @@ body {
   position: relative;
   top: 50%;
   left: 0;
-  height: 60vh;
+  height: 55vh;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -125,13 +122,13 @@ body {
 }
 .news .containNews .listNews .lastNews {
   color: azure;
-  margin-bottom: 60px;
   font-family: oldRepublic;
 }
 .news .containNews .listNews .containCards {
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   display: flex;
-  -moz-column-gap: 90px;
-       column-gap: 90px;
+  margin: 40px auto;
   align-items: center;
   flex-direction: row;
   justify-content: center;
@@ -169,7 +166,7 @@ body {
   opacity: 1;
 }
 .news .containNews .listNews .otherNews {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 .news .containNews .listNews .otherNews a {
   font-size: 1.4em;
@@ -182,7 +179,7 @@ body {
 }
 .news .containNews .listNews .footer {
   display: flex;
-  margin: 20px auto;
+  margin: 0px auto;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
@@ -218,6 +215,52 @@ body {
 .news .containNews .listNews .footer .listSocial li a .fa-youtube:hover {
   color: #9b0000;
   text-shadow: 0 0 15px #9b0000, 9px -21px 5px rgba(206, 89, 55, 0);
+}
+
+#tlouArticle .modal-dialog, #rdrArticle .modal-dialog, #ac4BlackFlagArticle .modal-dialog, #cyberpunk2077Article .modal-dialog {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1800px;
+}
+#tlouArticle .modal-dialog .modal-content, #rdrArticle .modal-dialog .modal-content, #ac4BlackFlagArticle .modal-dialog .modal-content, #cyberpunk2077Article .modal-dialog .modal-content {
+  background-image: url("/assets/picts/news/articles/articleBackground.jpeg");
+}
+#tlouArticle .modal-dialog .modal-content #btnCloseModal, #rdrArticle .modal-dialog .modal-content #btnCloseModal, #ac4BlackFlagArticle .modal-dialog .modal-content #btnCloseModal, #cyberpunk2077Article .modal-dialog .modal-content #btnCloseModal {
+  position: absolute;
+  top: -3%;
+  right: -2%;
+  font-size: 1.8em;
+  color: darkred;
+  border: transparent;
+  background: transparent;
+  transform: translate(-50%, -50%);
+}
+#tlouArticle .modal-dialog .modal-content #btnCloseModal:hover, #rdrArticle .modal-dialog .modal-content #btnCloseModal:hover, #ac4BlackFlagArticle .modal-dialog .modal-content #btnCloseModal:hover, #cyberpunk2077Article .modal-dialog .modal-content #btnCloseModal:hover {
+  color: azure;
+}
+#tlouArticle .modal-dialog .modal-content .row, #rdrArticle .modal-dialog .modal-content .row, #ac4BlackFlagArticle .modal-dialog .modal-content .row, #cyberpunk2077Article .modal-dialog .modal-content .row {
+  overflow: auto;
+}
+#tlouArticle .modal-dialog .modal-content .row .col-lg-5 .img-fluid, #rdrArticle .modal-dialog .modal-content .row .col-lg-5 .img-fluid, #ac4BlackFlagArticle .modal-dialog .modal-content .row .col-lg-5 .img-fluid, #cyberpunk2077Article .modal-dialog .modal-content .row .col-lg-5 .img-fluid {
+  height: 100%;
+  max-width: 100%;
+}
+#tlouArticle .modal-dialog .modal-content .row .col-lg-7, #rdrArticle .modal-dialog .modal-content .row .col-lg-7, #ac4BlackFlagArticle .modal-dialog .modal-content .row .col-lg-7, #cyberpunk2077Article .modal-dialog .modal-content .row .col-lg-7 {
+  padding: 20px;
+}
+#tlouArticle .modal-dialog .modal-content .row .col-lg-7 p, #rdrArticle .modal-dialog .modal-content .row .col-lg-7 p, #ac4BlackFlagArticle .modal-dialog .modal-content .row .col-lg-7 p, #cyberpunk2077Article .modal-dialog .modal-content .row .col-lg-7 p {
+  color: azure;
+  font-family: oldRepublic;
+}
+#tlouArticle .modal-dialog .modal-content .row .col-lg-7 .info, #rdrArticle .modal-dialog .modal-content .row .col-lg-7 .info, #ac4BlackFlagArticle .modal-dialog .modal-content .row .col-lg-7 .info, #cyberpunk2077Article .modal-dialog .modal-content .row .col-lg-7 .info {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#tlouArticle .modal-dialog .modal-content .row .col-lg-7 .info ul li, #rdrArticle .modal-dialog .modal-content .row .col-lg-7 .info ul li, #ac4BlackFlagArticle .modal-dialog .modal-content .row .col-lg-7 .info ul li, #cyberpunk2077Article .modal-dialog .modal-content .row .col-lg-7 .info ul li {
+  font-style: italic;
+  color: azure;
+  font-family: oldRepublic;
 }
 
 @font-face {
