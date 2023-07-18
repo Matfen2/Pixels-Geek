@@ -7,6 +7,9 @@ import { ShowUniversComponent } from './components/show-univers/show-univers.com
 import { WhyComponent } from './components/why/why.component';
 import { NewsComponent } from './components/news/news.component';
 import { ArticlesComponent } from './components/articles/articles.component';
+import { SagasModalsFirstComponent } from './components/sagas-modals-first/sagas-modals-first.component';
+import { SagasModalsSecondComponent } from './components/sagas-modals-second/sagas-modals-second.component';
+import { SagasModalsThirdComponent } from './components/sagas-modals-third/sagas-modals-third.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ArticlesComponent } from './components/articles/articles.component';
     ShowUniversComponent,
     WhyComponent,
     NewsComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    SagasModalsFirstComponent,
+    SagasModalsSecondComponent,
+    SagasModalsThirdComponent
   ],
   imports: [
     BrowserModule,
