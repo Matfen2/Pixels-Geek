@@ -301,6 +301,76 @@ $sixColor: #9b0000;
     }
 }
 
+// SAGAS
+#fallout, #doom, #godOfWar {
+    .modal-dialog {
+        .modal-content {
+            padding: 20px;
+            #btnCloseModal {
+                position: absolute;
+                top: -2%;
+                right: -3%;
+                border: transparent;
+                background: transparent;
+            }
+            .containSaga {
+                display: flex;
+                flex-direction: column;
+                .showGame {
+                    .row {
+                        .col-lg-4 {
+                            .img-fluid {
+                                height: 300px;
+                                max-width: 250px;
+                            }
+                        }
+                        .col-lg-8 {
+                            .title {
+                                font-size: 1.4em;
+                                font-family: oldRepublic;
+                            }
+                            .typeGame {
+                                display: flex;
+                                align-items: center;
+                                flex-direction: row;
+                            }
+                            .describe {
+                                margin: 15px auto;
+                                font-size: 1.2em;
+                            }
+                            .info {
+                                display: flex;
+                                align-items: center;
+                                flex-direction: row;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+                .listGames {
+                    margin: 30px auto;
+                    .row {
+                        .col-lg-2 {
+                            .img-fluid {
+                                cursor: pointer;
+                                opacity: 0.8;
+                                height: 160px;
+                                max-width: 150px;
+                                transition: all 0.25ms ease;
+                                &:hover {
+                                    opacity: 1.0;
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 // FONTS
 @font-face {
     font-family: oldRepublic;

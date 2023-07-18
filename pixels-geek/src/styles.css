@@ -263,6 +263,58 @@ body {
   font-family: oldRepublic;
 }
 
+#fallout .modal-dialog .modal-content, #doom .modal-dialog .modal-content, #godOfWar .modal-dialog .modal-content {
+  padding: 20px;
+}
+#fallout .modal-dialog .modal-content #btnCloseModal, #doom .modal-dialog .modal-content #btnCloseModal, #godOfWar .modal-dialog .modal-content #btnCloseModal {
+  position: absolute;
+  top: -2%;
+  right: -3%;
+  border: transparent;
+  background: transparent;
+}
+#fallout .modal-dialog .modal-content .containSaga, #doom .modal-dialog .modal-content .containSaga, #godOfWar .modal-dialog .modal-content .containSaga {
+  display: flex;
+  flex-direction: column;
+}
+#fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-4 .img-fluid, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-4 .img-fluid, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-4 .img-fluid {
+  height: 300px;
+  max-width: 250px;
+}
+#fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .title, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .title, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .title {
+  font-size: 1.4em;
+  font-family: oldRepublic;
+}
+#fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .typeGame, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .typeGame, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .typeGame {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+#fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .describe, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .describe, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .describe {
+  margin: 15px auto;
+  font-size: 1.2em;
+}
+#fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+#fallout .modal-dialog .modal-content .containSaga .listGames, #doom .modal-dialog .modal-content .containSaga .listGames, #godOfWar .modal-dialog .modal-content .containSaga .listGames {
+  margin: 30px auto;
+}
+#fallout .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid, #doom .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid, #godOfWar .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid {
+  cursor: pointer;
+  opacity: 0.8;
+  height: 160px;
+  max-width: 150px;
+  transition: all 0.25ms ease;
+}
+#fallout .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid:hover, #doom .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid:hover, #godOfWar .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 @font-face {
   font-family: oldRepublic;
   src: url("./assets/fonts/OldRepublic.ttf");

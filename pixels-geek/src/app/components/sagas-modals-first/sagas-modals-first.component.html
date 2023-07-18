@@ -1,16 +1,128 @@
 <!-- FALLOUT -->
-<div class="modal fade" id="fallout">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content">
-            <button type="button" id="btnCloseModal" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
-            <div class="row">
-                <div class="col-lg-4">
-                    <img src="/assets/picts/news/articles/tlouPart3.jpg" alt="pictTlou" class="img-fluid w-100"/>
-                </div>
-                <div class="col-lg-8">
-                    
-                </div>
+<div *ngFor="let sagaOne of sagasFirst" class="modal fade" id="fallout">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content" [id]="sagaOne.id.toString()">
+      <button type="button" id="btnCloseModal" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
+      <div class="containSaga">
+        <div class="showGame">
+          <div class="row">
+            <div class="col-lg-4">
+              <img [src]="sagaOne.pictGame" alt="pictTlou" class="img-fluid w-100" />
             </div>
+            <div class="col-lg-8">
+              <p class="title">{{ sagaOne.title }}</p>
+              <div class="typeGame">
+                <button type="button" id="btnOne">{{ sagaOne.typeOne }}</button>
+                <button type="button" id="btnTwo">{{ sagaOne.typeTwo }}</button>
+                <button type="button" id="btnThree">{{ sagaOne.typeThree }}</button>
+              </div>
+              <p class="describe">{{ sagaOne.info }}</p>
+              <div class="info">
+                <button type="button" id="btnCritics"><a href="#">TEST</a></button>
+                <button type="button" id="btnPrice"><span class="price">{{ sagaOne.price }}€</span><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="listGames">
+          <div class="row">
+            <div *ngFor="let game of sagasFirst" class="col-lg-2">
+              <img
+                [src]="game.pictGame"
+                alt="pictGame"
+                class="img-fluid w-100"
+                (click)="showGameInfoFallout(game)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- DOOM -->
+<div *ngFor="let sagaTwo of sagasSecond" class="modal fade" id="doom">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content" [id]="sagaTwo.id.toString()">
+      <button type="button" id="btnCloseModal" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
+      <div class="containSaga">
+        <div class="showGame">
+          <div class="row">
+            <div class="col-lg-4">
+              <img [src]="sagaTwo.pictGame" alt="pictTlou" class="img-fluid w-100" />
+            </div>
+            <div class="col-lg-8">
+              <p class="title">{{ sagaTwo.title }}</p>
+              <div class="typeGame">
+                <button type="button" id="btnOne">{{ sagaTwo.typeOne }}</button>
+                <button type="button" id="btnTwo">{{ sagaTwo.typeTwo }}</button>
+                <button type="button" id="btnThree">{{ sagaTwo.typeThree }}</button>
+              </div>
+              <p class="describe">{{ sagaTwo.info }}</p>
+              <div class="info">
+                <button type="button" id="btnCritics"><a href="#">TEST</a></button>
+                <button type="button" id="btnPrice"><span class="price">{{ sagaTwo.price }}€</span><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="listGames">
+          <div class="row">
+            <div *ngFor="let game of sagasSecond" class="col-lg-2">
+              <img
+                [src]="game.pictGame"
+                alt="pictGame"
+                class="img-fluid w-100"
+                (click)="showGameInfoDoom(game)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GOD OF WAR -->
+<div *ngFor="let sagaThree of sagasThird" class="modal fade" id="godOfWar">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content" [id]="sagaThree.id.toString()">
+      <button type="button" id="btnCloseModal" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
+      <div class="containSaga">
+        <div class="showGame">
+          <div class="row">
+            <div class="col-lg-4">
+              <img [src]="sagaThree.pictGame" alt="pictTlou" class="img-fluid w-100" />
+            </div>
+            <div class="col-lg-8">
+              <p class="title">{{ sagaThree.title }}</p>
+              <div class="typeGame">
+                <button type="button" id="btnOne">{{ sagaThree.typeOne }}</button>
+                <button type="button" id="btnTwo">{{ sagaThree.typeTwo }}</button>
+                <button type="button" id="btnThree">{{ sagaThree.typeThree }}</button>
+              </div>
+              <p class="describe">{{ sagaThree.info }}</p>
+              <div class="info">
+                <button type="button" id="btnCritics"><a href="#">TEST</a></button>
+                <button type="button" id="btnPrice"><span class="price">{{ sagaThree.price }}€</span><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="listGames">
+          <div class="row">
+            <div *ngFor="let game of sagasThird" class="col-lg-2">
+              <img
+                [src]="game.pictGame"
+                alt="pictGame"
+                class="img-fluid w-100"
+                (click)="showGameInfoGodOfWar(game)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
