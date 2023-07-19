@@ -254,7 +254,6 @@ $sixColor: #9b0000;
         width: 100%;
         max-width: 1800px;
         .modal-content {
-            
             background-image: url('/assets/picts/news/articles/articleBackground.jpeg');
             #btnCloseModal {
                 position: absolute;
@@ -304,51 +303,75 @@ $sixColor: #9b0000;
 // SAGAS
 #fallout, #doom, #godOfWar, #theLastOfUs, #theWitcher, #massEffect, #bioshock, #cyberpunk2077, #assassinsCreed {
     .modal-dialog {
+        width: 100%;
+        max-width: 1200px;
         .modal-content {
-            padding: 20px;
+            padding: 15px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('/assets/picts/modals/modalSagaBackground.png');
             #btnCloseModal {
                 position: absolute;
-                top: -2%;
-                right: -3%;
+                top: -7%;
+                right: -2%;
+                font-size: 1.9em;
+                color: $firstColor;
                 border: transparent;
                 background: transparent;
+                &:hover {
+                    color: $thirdColor;
+                }
             }
             .containSaga {
                 display: flex;
                 flex-direction: column;
                 .showGame {
+                    line-height: 30px;
                     .row {
                         .col-lg-4 {
                             .img-fluid {
-                                height: 300px;
-                                max-width: 250px;
+                                height: 400px;
+                                max-width: 380px;
                             }
                         }
                         .col-lg-8 {
+                            color: $firstColor;
+                            text-shadow: 2px 2px 2px #CE1010;
                             .title {
-                                font-size: 1.4em;
+                                font-size: 1.2em;
                                 font-family: oldRepublic;
                             }
-                            .typeGame {
-                                display: flex;
-                                align-items: center;
-                                flex-direction: row;
-                            }
                             .describe {
+                                line-height: 41px;
+                                font-size: 1.4em;
                                 margin: 15px auto;
                                 font-size: 1.2em;
+                                font-family: futureEarth;
                             }
                             .info {
                                 display: flex;
+                                column-gap: 120px;
                                 align-items: center;
                                 flex-direction: row;
                                 justify-content: center;
+                                .typeGame {
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    #btnOne, #btnTwo, #btnThree {
+                                        padding: 5px;
+                                        background: transparent;
+                                        font-family: spantaran;;
+                                    }
+                                }
                             }
                         }
                     }
                 }
                 .listGames {
                     margin: 30px auto;
+                    margin-bottom: 5px;
                     .row {
                         .col-lg-2 {
                             .img-fluid {
@@ -370,7 +393,6 @@ $sixColor: #9b0000;
     }
 }
 
-
 // FONTS
 @font-face {
     font-family: oldRepublic;
@@ -385,4 +407,14 @@ $sixColor: #9b0000;
 @font-face {
     font-family: futureEarth;
     src: url('./assets/fonts/futureEarth.ttf');
+}
+
+@font-face {
+    font-family: soleSurvivor;
+    src: url('./assets/fonts/SoleSurvivor.ttf');
+}
+
+@font-face {
+    font-family: cyberpunk;
+    src: url('./assets/fonts/Cyberpunk.ttf');
 }

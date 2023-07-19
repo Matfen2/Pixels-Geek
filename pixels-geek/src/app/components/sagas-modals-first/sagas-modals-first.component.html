@@ -2,7 +2,7 @@
 <div *ngFor="let sagaOne of sagasFirst" class="modal fade" id="fallout" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content" [id]="sagaOne.id.toString()">
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <button type="button" id="btnCloseModal" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
       <div class="containSaga">
         <div class="showGame">
           <div class="row">
@@ -11,15 +11,17 @@
             </div>
             <div class="col-lg-8">
               <p class="title">{{ selectedFallout ? selectedFallout.title : sagaOne.title }}</p>
-              <div class="typeGame">
-                <button type="button" id="btnOne">{{ selectedFallout ? selectedFallout.typeOne : sagaOne.typeOne }}</button>
-                <button type="button" id="btnTwo">{{ selectedFallout ? selectedFallout.typeTwo : sagaOne.typeTwo }}</button>
-                <button type="button" id="btnThree">{{ selectedFallout ? selectedFallout.typeThree : sagaOne.typeThree }}</button>
-              </div>
               <p class="describe">{{ selectedFallout ? selectedFallout.info : sagaOne.info }}</p>
               <div class="info">
-                <button type="button" id="btnCritics"><a href="#">TEST</a></button>
+                <div class="typeGame">
+                  <button type="button" id="btnOne">{{ selectedFallout ? selectedFallout.typeOne : sagaOne.typeOne }}</button>
+                  <button type="button" id="btnTwo">{{ selectedFallout ? selectedFallout.typeTwo : sagaOne.typeTwo }}</button>
+                  <button type="button" id="btnThree">{{ selectedFallout ? selectedFallout.typeThree : sagaOne.typeThree }}</button>
+                </div>
+                <div class="test">
+                  <button type="button" id="btnCritics"><a href="#">TEST</a></button>
                 <button type="button" id="btnPrice"><span class="price">{{ selectedFallout ? selectedFallout.price : sagaOne.price }}€</span><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
               </div>
             </div>
           </div>
@@ -45,7 +47,7 @@
 <div *ngFor="let sagaTwo of sagasSecond" class="modal fade" id="doom" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content" [id]="sagaTwo.id.toString()">
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <button type="button" id="btnCloseModal" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
       <div class="containSaga">
         <div class="showGame">
           <div class="row">
@@ -88,7 +90,7 @@
 <div *ngFor="let sagaThird of sagasThird" class="modal fade" id="godOfWar" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content" [id]="sagaThird.id.toString()">
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <button type="button" id="btnCloseModal" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
       <div class="containSaga">
         <div class="showGame">
           <div class="row">

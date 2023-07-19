@@ -48,7 +48,7 @@ export class SagasModalsFirstComponent {
       typeOne: 'RPG',
       typeTwo: 'CRPG',
       typeThree: 'Tour par Tour',
-      info: "Fallout est un jeu de rôle sur PC vous projetant dans un univers post-nucléaire. Après la Grande Guerre du XXIe siècle qui fut dévastatrice pour l'humanité, des hommes tentent de survivre dans les ruines de grandes villes. Vous incarnez un réfugié de l'Abri 13, l'un de ceux construits pour protéger quelques privilégiés. Le dirigeant de l'Abri 13 vous envoie chercher une puce de rechange pour la filtration de l'eau. Né dans l'abri, vous vous apprêtez à découvrir ce qu'il reste du monde extérieur.",
+      info: "Après la Grande Guerre du XXIe siècle qui fut dévastatrice pour l'humanité, des hommes tentent de survivre dans les ruines de grandes villes. Vous incarnez un réfugié de l'Abri 13, l'un de ceux construits pour protéger quelques privilégiés. Le dirigeant de l'Abri 13 vous envoie chercher une puce de rechange pour la filtration de l'eau. Né dans l'abri, vous vous apprêtez à découvrir ce qu'il reste du monde extérieur.",
       price: 9.99,
     },
     {
@@ -68,7 +68,7 @@ export class SagasModalsFirstComponent {
       typeOne: 'RPG',
       typeTwo: 'Action-RPG',
       typeThree: 'FPS',
-      info: "Fallout 3 est un jeu de rôle en 3D se déroulant dans un monde post-apocalyptique. Le joueur y fait évoluer son personnage comme il le souhaite et choisit la façon dont il va communiquer et interagir avec les autres personnages. Il peut débloquer jusqu'à 200 fins différentes.",
+      info: "Fallout 3 est un jeu de rôle en 3D se déroulant dans un monde post-apocalyptique. Le joueur y fait évoluer son personnage comme il le souhaite et choisit la façon dont il va communiquer et interagir avec les autres personnages. Admirez les images et sons de l'immense Capitale Wasteland ! Vous faites les choix qui vous définiront et qui changeront le monde. Gardez juste un œil sur votre dosimètre!",
       price: 9.99,
     },
     {
@@ -78,7 +78,7 @@ export class SagasModalsFirstComponent {
       typeOne: 'RPG',
       typeTwo: 'Action-RPG',
       typeThree: 'FPS',
-      info: "Fallout New Vegas est un jeu de rôle sur PC se déroulant dans un univers post-apocalyptique. Le jeu propose une grande liberté d'évolution et d'interactions avec l'univers allant de la persuasion d'autrui (dans tous les sens du terme) jusqu'à la destruction massive de ses ennemis par satellite.",
+      info: "Le jeu propose une grande liberté d'évolution et d'interactions avec l'univers allant de la persuasion d'autrui (dans tous les sens du terme) jusqu'à la destruction massive de ses ennemis par satellite. Du désert de Mojave au strip de Vegas, en passant par le barrage Hoover Dam, vous allez rencontrer un bon nombre de personnages attachants et colorés.",
       price: 9.99,
     },
     {
@@ -88,7 +88,7 @@ export class SagasModalsFirstComponent {
       typeOne: 'RPG',
       typeTwo: 'Action-RPG',
       typeThree: 'FPS',
-      info: "Fallout 4 est un RPG à la première personne se déroulant dans un univers post-apocalyptique. Dans un monde dévasté par les bombes, vous incarnez un personnage solitaire sortant d'un abri anti-atomique qui doit se faire sa place dans la ville de Boston et de ses environs.",
+      info: "Dans un monde dévasté par les bombes, vous incarnez un personnage solitaire sortant d'un abri anti-atomique qui doit se faire sa place dans la ville de Boston et de ses environs. Votre survie sera un combat de tous les instants et vos choix façonneront votre destin. Vous seul avez le pouvoir de faire entrer les Terres désolées dans une nouvelle ère. Bienvenue chez vous.",
       price: 9.99,
     },
     {
@@ -98,10 +98,9 @@ export class SagasModalsFirstComponent {
       typeOne: 'RPG',
       typeTwo: 'Action-RPG',
       typeThree: 'Multijoueur',
-      info: "Nouvelle entrée dans la série Fallout, ce Fallout 76 se présente comme un jeu multijoueur de survie. On y incarnera un habitant de l'abris 76 a peine 25 ans après l'holocauste nucléaire, qui a pour tâche de rebâtir le monde pour la population des autres abris.",
+      info: "Nouvelle entrée dans la série Fallout, ce Fallout 76 se présente comme un jeu multijoueur de survie. Découvrez les secrets de la Virginie-Occidentale en prenant part à une quête principale immersive qui commence dès votre sortie de l'abri 76. Faites-vous des amis ou trahissez vos nouveaux voisins venus pour reconstruire, et voyez les Appalaches du point de vue de ses résidents.",
       price: 9.99,
-    },
-    // Ajoutez les autres sagas avec leurs informations
+    }
   ];
 
   // DOOM

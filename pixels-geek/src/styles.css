@@ -263,45 +263,76 @@ body {
   font-family: oldRepublic;
 }
 
+#fallout .modal-dialog, #doom .modal-dialog, #godOfWar .modal-dialog, #theLastOfUs .modal-dialog, #theWitcher .modal-dialog, #massEffect .modal-dialog, #bioshock .modal-dialog, #cyberpunk2077 .modal-dialog, #assassinsCreed .modal-dialog {
+  width: 100%;
+  max-width: 1200px;
+}
 #fallout .modal-dialog .modal-content, #doom .modal-dialog .modal-content, #godOfWar .modal-dialog .modal-content, #theLastOfUs .modal-dialog .modal-content, #theWitcher .modal-dialog .modal-content, #massEffect .modal-dialog .modal-content, #bioshock .modal-dialog .modal-content, #cyberpunk2077 .modal-dialog .modal-content, #assassinsCreed .modal-dialog .modal-content {
-  padding: 20px;
+  padding: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/modals/modalSagaBackground.png");
 }
 #fallout .modal-dialog .modal-content #btnCloseModal, #doom .modal-dialog .modal-content #btnCloseModal, #godOfWar .modal-dialog .modal-content #btnCloseModal, #theLastOfUs .modal-dialog .modal-content #btnCloseModal, #theWitcher .modal-dialog .modal-content #btnCloseModal, #massEffect .modal-dialog .modal-content #btnCloseModal, #bioshock .modal-dialog .modal-content #btnCloseModal, #cyberpunk2077 .modal-dialog .modal-content #btnCloseModal, #assassinsCreed .modal-dialog .modal-content #btnCloseModal {
   position: absolute;
-  top: -2%;
-  right: -3%;
+  top: -7%;
+  right: -2%;
+  font-size: 1.9em;
+  color: azure;
   border: transparent;
   background: transparent;
+}
+#fallout .modal-dialog .modal-content #btnCloseModal:hover, #doom .modal-dialog .modal-content #btnCloseModal:hover, #godOfWar .modal-dialog .modal-content #btnCloseModal:hover, #theLastOfUs .modal-dialog .modal-content #btnCloseModal:hover, #theWitcher .modal-dialog .modal-content #btnCloseModal:hover, #massEffect .modal-dialog .modal-content #btnCloseModal:hover, #bioshock .modal-dialog .modal-content #btnCloseModal:hover, #cyberpunk2077 .modal-dialog .modal-content #btnCloseModal:hover, #assassinsCreed .modal-dialog .modal-content #btnCloseModal:hover {
+  color: darkred;
 }
 #fallout .modal-dialog .modal-content .containSaga, #doom .modal-dialog .modal-content .containSaga, #godOfWar .modal-dialog .modal-content .containSaga, #theLastOfUs .modal-dialog .modal-content .containSaga, #theWitcher .modal-dialog .modal-content .containSaga, #massEffect .modal-dialog .modal-content .containSaga, #bioshock .modal-dialog .modal-content .containSaga, #cyberpunk2077 .modal-dialog .modal-content .containSaga, #assassinsCreed .modal-dialog .modal-content .containSaga {
   display: flex;
   flex-direction: column;
 }
+#fallout .modal-dialog .modal-content .containSaga .showGame, #doom .modal-dialog .modal-content .containSaga .showGame, #godOfWar .modal-dialog .modal-content .containSaga .showGame, #theLastOfUs .modal-dialog .modal-content .containSaga .showGame, #theWitcher .modal-dialog .modal-content .containSaga .showGame, #massEffect .modal-dialog .modal-content .containSaga .showGame, #bioshock .modal-dialog .modal-content .containSaga .showGame, #cyberpunk2077 .modal-dialog .modal-content .containSaga .showGame, #assassinsCreed .modal-dialog .modal-content .containSaga .showGame {
+  line-height: 30px;
+}
 #fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-4 .img-fluid, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-4 .img-fluid, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-4 .img-fluid, #theLastOfUs .modal-dialog .modal-content .containSaga .showGame .row .col-lg-4 .img-fluid, #theWitcher .modal-dialog .modal-content .containSaga .showGame .row .col-lg-4 .img-fluid, #massEffect .modal-dialog .modal-content .containSaga .showGame .row .col-lg-4 .img-fluid, #bioshock .modal-dialog .modal-content .containSaga .showGame .row .col-lg-4 .img-fluid, #cyberpunk2077 .modal-dialog .modal-content .containSaga .showGame .row .col-lg-4 .img-fluid, #assassinsCreed .modal-dialog .modal-content .containSaga .showGame .row .col-lg-4 .img-fluid {
-  height: 300px;
-  max-width: 250px;
+  height: 400px;
+  max-width: 380px;
+}
+#fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8, #theLastOfUs .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8, #theWitcher .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8, #massEffect .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8, #bioshock .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8, #cyberpunk2077 .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8, #assassinsCreed .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 {
+  color: azure;
+  text-shadow: 2px 2px 2px #CE1010;
 }
 #fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .title, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .title, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .title, #theLastOfUs .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .title, #theWitcher .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .title, #massEffect .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .title, #bioshock .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .title, #cyberpunk2077 .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .title, #assassinsCreed .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .title {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-family: oldRepublic;
 }
-#fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .typeGame, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .typeGame, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .typeGame, #theLastOfUs .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .typeGame, #theWitcher .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .typeGame, #massEffect .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .typeGame, #bioshock .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .typeGame, #cyberpunk2077 .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .typeGame, #assassinsCreed .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .typeGame {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
 #fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .describe, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .describe, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .describe, #theLastOfUs .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .describe, #theWitcher .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .describe, #massEffect .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .describe, #bioshock .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .describe, #cyberpunk2077 .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .describe, #assassinsCreed .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .describe {
+  line-height: 41px;
+  font-size: 1.4em;
   margin: 15px auto;
   font-size: 1.2em;
+  font-family: futureEarth;
 }
 #fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info, #theLastOfUs .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info, #theWitcher .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info, #massEffect .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info, #bioshock .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info, #cyberpunk2077 .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info, #assassinsCreed .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info {
   display: flex;
+  -moz-column-gap: 120px;
+       column-gap: 120px;
   align-items: center;
   flex-direction: row;
   justify-content: center;
 }
+#fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame, #theLastOfUs .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame, #theWitcher .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame, #massEffect .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame, #bioshock .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame, #cyberpunk2077 .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame, #assassinsCreed .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+#fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnOne, #fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnTwo, #fallout .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnThree, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnOne, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnTwo, #doom .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnThree, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnOne, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnTwo, #godOfWar .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnThree, #theLastOfUs .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnOne, #theLastOfUs .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnTwo, #theLastOfUs .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnThree, #theWitcher .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnOne, #theWitcher .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnTwo, #theWitcher .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnThree, #massEffect .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnOne, #massEffect .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnTwo, #massEffect .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnThree, #bioshock .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnOne, #bioshock .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnTwo, #bioshock .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnThree, #cyberpunk2077 .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnOne, #cyberpunk2077 .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnTwo, #cyberpunk2077 .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnThree, #assassinsCreed .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnOne, #assassinsCreed .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnTwo, #assassinsCreed .modal-dialog .modal-content .containSaga .showGame .row .col-lg-8 .info .typeGame #btnThree {
+  padding: 5px;
+  background: transparent;
+  font-family: spantaran;
+}
 #fallout .modal-dialog .modal-content .containSaga .listGames, #doom .modal-dialog .modal-content .containSaga .listGames, #godOfWar .modal-dialog .modal-content .containSaga .listGames, #theLastOfUs .modal-dialog .modal-content .containSaga .listGames, #theWitcher .modal-dialog .modal-content .containSaga .listGames, #massEffect .modal-dialog .modal-content .containSaga .listGames, #bioshock .modal-dialog .modal-content .containSaga .listGames, #cyberpunk2077 .modal-dialog .modal-content .containSaga .listGames, #assassinsCreed .modal-dialog .modal-content .containSaga .listGames {
   margin: 30px auto;
+  margin-bottom: 5px;
 }
 #fallout .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid, #doom .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid, #godOfWar .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid, #theLastOfUs .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid, #theWitcher .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid, #massEffect .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid, #bioshock .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid, #cyberpunk2077 .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid, #assassinsCreed .modal-dialog .modal-content .containSaga .listGames .row .col-lg-2 .img-fluid {
   cursor: pointer;
@@ -326,4 +357,12 @@ body {
 @font-face {
   font-family: futureEarth;
   src: url("./assets/fonts/futureEarth.ttf");
+}
+@font-face {
+  font-family: soleSurvivor;
+  src: url("./assets/fonts/SoleSurvivor.ttf");
+}
+@font-face {
+  font-family: cyberpunk;
+  src: url("./assets/fonts/Cyberpunk.ttf");
 }/*# sourceMappingURL=styles.css.map */
