@@ -222,21 +222,28 @@ export class SagasModalsFirstComponent {
     },
   ];
 
-  selectedGameFallout: Fallout | undefined;
+  // Propriétés pour stocker les jeux sélectionnés par défaut
+  selectedFallout: Fallout | null = null;
+  selectedDoom: Doom | null = null;
+  selectedGodOfWar: GodOfWar | null = null;
 
-  showGameInfoFallout(game: Fallout) {
-    this.selectedGameFallout = game;
+  // Fonction pour afficher les informations d'un jeu dans .showGame (pour chaque saga)
+  showFalloutInfo(game: Fallout) {
+    this.selectedFallout = game;
   }
 
-  selectedGameDoom: Doom | undefined;
-
-  showGameInfoDoom(game: Doom) {
-    this.selectedGameDoom = game;
+  showDoomInfo(game: Doom) {
+    this.selectedDoom = game;
   }
 
-  selectedGameGodOfWar: GodOfWar | undefined;
+  showGodOfWarInfo(game: GodOfWar) {
+    this.selectedGodOfWar = game;
+  }
 
-  showGameInfoGodOfWar(game: GodOfWar) {
-    this.selectedGameGodOfWar = game;
+  // Réinitialiser les jeux sélectionnés lorsque le modal est ouvert (pour chaque saga)
+  resetSelectedGames() {
+    this.selectedFallout = this.sagasFirst[0]; // Affiche le premier jeu Fallout par défaut
+    this.selectedDoom = this.sagasSecond[0]; // Affiche le premier jeu Doom par défaut
+    this.selectedGodOfWar = this.sagasThird[0]; // Affiche le premier jeu God of War par défaut
   }
 }

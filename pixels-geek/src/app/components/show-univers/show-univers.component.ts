@@ -70,7 +70,7 @@ export class ShowUniversComponent {
     },
     {
       id: 9,
-      ref: '#acLogo',
+      ref: '#assassinsCreed',
       logo: '/assets/picts/saga/acLogo.png',
       wallpaper: '/assets/picts/saga/acWallpaper.jpg',
     },

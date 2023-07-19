@@ -1,1 +1,128 @@
-<p>sagas-modals-second works!</p>
+<!-- THE LAST OF US -->
+<div *ngFor="let sagaFour of sagasFour" class="modal fade" id="theLastOfUs" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content" [id]="sagaFour.id.toString()">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="containSaga">
+        <div class="showGame">
+          <div class="row">
+            <div class="col-lg-4">
+              <img [src]="selectedTheLastOfUs ? selectedTheLastOfUs.pictGame : sagaFour.pictGame" alt="pictTlou" class="img-fluid w-100" />
+            </div>
+            <div class="col-lg-8">
+              <p class="title">{{ selectedTheLastOfUs ? selectedTheLastOfUs.title : sagaFour.title }}</p>
+              <div class="typeGame">
+                <button type="button" id="btnOne">{{ selectedTheLastOfUs ? selectedTheLastOfUs.typeOne : sagaFour.typeOne }}</button>
+                <button type="button" id="btnTwo">{{ selectedTheLastOfUs ? selectedTheLastOfUs.typeTwo : sagaFour.typeTwo }}</button>
+                <button type="button" id="btnThree">{{ selectedTheLastOfUs ? selectedTheLastOfUs.typeThree : sagaFour.typeThree }}</button>
+              </div>
+              <p class="describe">{{ selectedTheLastOfUs ? selectedTheLastOfUs.info : sagaFour.info }}</p>
+              <div class="info">
+                <button type="button" id="btnCritics"><a href="#">TEST</a></button>
+                <button type="button" id="btnPrice"><span class="price">{{ selectedTheLastOfUs ? selectedTheLastOfUs.price : sagaFour.price }}€</span><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="listGames">
+          <div class="row">
+            <div *ngFor="let game of sagasFour" class="col-lg-3">
+              <img
+                [src]="game.pictGame"
+                alt="pictGame"
+                class="img-fluid w-100"
+                (click)="showTheLastOfUsInfo(game)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- THE WITCHER -->
+<div *ngFor="let sagaFive of sagasFive" class="modal fade" id="theWitcher" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content" [id]="sagaFive.id.toString()">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="containSaga">
+        <div class="showGame">
+          <div class="row">
+            <div class="col-lg-4">
+              <img [src]="selectedTheWitcher ? selectedTheWitcher.pictGame : sagaFive.pictGame" alt="pictTlou" class="img-fluid w-100" />
+            </div>
+            <div class="col-lg-8">
+              <p class="title">{{ selectedTheWitcher ? selectedTheWitcher.title : sagaFive.title }}</p>
+              <div class="typeGame">
+                <button type="button" id="btnOne">{{ selectedTheWitcher ? selectedTheWitcher.typeOne : sagaFive.typeOne }}</button>
+                <button type="button" id="btnTwo">{{ selectedTheWitcher ? selectedTheWitcher.typeTwo : sagaFive.typeTwo }}</button>
+                <button type="button" id="btnThree">{{ selectedTheWitcher ? selectedTheWitcher.typeThree : sagaFive.typeThree }}</button>
+              </div>
+              <p class="describe">{{ selectedTheWitcher ? selectedTheWitcher.info : sagaFive.info }}</p>
+              <div class="info">
+                <button type="button" id="btnCritics"><a href="#">TEST</a></button>
+                <button type="button" id="btnPrice"><span class="price">{{ selectedTheWitcher ? selectedTheWitcher.price : sagaFive.price }}€</span><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="listGames">
+          <div class="row">
+            <div *ngFor="let game of sagasFive" class="col-lg-2">
+              <img
+                [src]="game.pictGame"
+                alt="pictGame"
+                class="img-fluid w-100"
+                (click)="showTheWitcherInfo(game)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GOD OF WAR -->
+<div *ngFor="let sagaSix of sagasSix" class="modal fade" id="massEffect" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content" [id]="sagaSix.id.toString()">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="containSaga">
+        <div class="showGame">
+          <div class="row">
+            <div class="col-lg-4">
+              <img [src]="selectedMassEffect ? selectedMassEffect.pictGame : sagaSix.pictGame" alt="pictTlou" class="img-fluid w-100" />
+            </div>
+            <div class="col-lg-8">
+              <p class="title">{{ selectedMassEffect ? selectedMassEffect.title : sagaSix.title }}</p>
+              <div class="typeGame">
+                <button type="button" id="btnOne">{{ selectedMassEffect ? selectedMassEffect.typeOne : sagaSix.typeOne }}</button>
+                <button type="button" id="btnTwo">{{ selectedMassEffect ? selectedMassEffect.typeTwo : sagaSix.typeTwo }}</button>
+                <button type="button" id="btnThree">{{ selectedMassEffect ? selectedMassEffect.typeThree : sagaSix.typeThree }}</button>
+              </div>
+              <p class="describe">{{ selectedMassEffect ? selectedMassEffect.info : sagaSix.info }}</p>
+              <div class="info">
+                <button type="button" id="btnCritics"><a href="#">TEST</a></button>
+                <button type="button" id="btnPrice"><span class="price">{{ selectedMassEffect ? selectedMassEffect.price : sagaSix.price }}€</span><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="listGames">
+          <div class="row">
+            <div *ngFor="let game of sagasSix" class="col-lg-2">
+              <img
+                [src]="game.pictGame"
+                alt="pictGame"
+                class="img-fluid w-100"
+                (click)="showMassEffectInfo(game)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
