@@ -10,6 +10,7 @@ import { ArticlesComponent } from './components/articles/articles.component';
 import { SagasModalsFirstComponent } from './components/sagas-modals-first/sagas-modals-first.component';
 import { SagasModalsSecondComponent } from './components/sagas-modals-second/sagas-modals-second.component';
 import { SagasModalsThirdComponent } from './components/sagas-modals-third/sagas-modals-third.component';
+import { AccountComponent } from './components/account/account.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SagasModalsThirdComponent } from './components/sagas-modals-third/sagas
     ArticlesComponent,
     SagasModalsFirstComponent,
     SagasModalsSecondComponent,
-    SagasModalsThirdComponent
+    SagasModalsThirdComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,

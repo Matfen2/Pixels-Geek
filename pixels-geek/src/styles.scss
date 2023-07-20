@@ -247,6 +247,7 @@ $sixColor: #9b0000;
     }
 }
 
+// NEWS
 #tlouArticle, #rdrArticle, #ac4BlackFlagArticle, #cyberpunk2077Article {
     .modal-dialog {
         display: flex;
@@ -393,6 +394,193 @@ $sixColor: #9b0000;
     }
 }
 
+// ACCOUNT
+#logIn {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/picts/pixelsGeekLogIn.png');
+    .modal-dialog {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        display: flex;
+        flex-direction: column;
+        .pionnier {
+        font-size: 1.6em;
+        text-align: center;
+        font-family: oldRepublic;
+        }
+        .modal-content {
+            margin: 180px auto;
+            width: 100%;
+            max-width: 500px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('/assets/picts/modalLogIn.jpg');
+            #btnCloseLogIn {
+                position: relative;
+                top: 30%;
+                left: 50%;
+                font-size: 1.8em;
+                margin-bottom: -30px;
+                transform: translate(-4%, -22%);
+                color: $firstColor;
+                border: transparent;
+                background: transparent;
+                &:hover {
+                    color: $thirdColor;
+                }
+            }
+            .modal-body {
+                text-align: center;
+                .connect {
+                    font-size: 1.6em;
+                    letter-spacing: 3px;
+                    color: $firstColor;
+                    font-family: futureEarth;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    input {
+                        width: 60%;
+                        margin: 10px auto;
+                        border: 1px solid black;
+                    }
+                }
+                .listLogIn {
+                    display: flex;
+                    column-gap: 30px;
+                    margin: 10px auto;
+                    margin-bottom: -10px;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: center;
+                    .noAccount {
+                        font-size: 1.4em;
+                        letter-spacing: 3px;
+                        font-family: spantaran;
+                    }
+                    #btnConnect {
+                        font-size: 1.2em;
+                        letter-spacing: 3px;
+                        margin-top: -15px;
+                        font-family: spantaran;
+                        border-radius: 40px;
+                        color: $firstColor;
+                        background: transparent;
+                        border: 1px solid $firstColor;
+                        &:hover {
+                            color: $thirdColor;
+                            background: $firstColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#signUp {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/picts/pixelsGeekSignUp.png');
+    .modal-dialog {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        display: flex;
+        flex-direction: column;
+        .actors {
+        font-size: 1.6em;
+        text-align: center;
+        color: $firstColor;
+        font-family: oldRepublic;
+        }
+        .modal-content {
+            margin: 170px auto;
+            width: 100%;
+            max-width: 500px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('/assets/picts/modalLogIn.jpg');
+            #btnCloseSignUp {
+                position: relative;
+                top: 30%;
+                left: 50%;
+                font-size: 1.8em;
+                margin-bottom: -30px;
+                transform: translate(-4%, -22%);
+                color: $firstColor;
+                border: transparent;
+                background: transparent;
+                &:hover {
+                    color: $thirdColor;
+                }
+            }
+            .modal-body {
+                text-align: center;
+                .inscribe {
+                    font-size: 1.6em;
+                    letter-spacing: 3px;
+                    color: $firstColor;
+                    font-family: futureEarth;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    .row {
+                        .col-lg-6 {
+                            input {
+                                width: 90%;
+                                margin: 10px auto;
+                                border: 1px solid black;
+                            }
+                        }
+                    }
+                }
+                .listSignUp {
+                    display: flex;
+                    column-gap: 30px;
+                    margin: 10px auto;
+                    margin-bottom: -10px;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: center;
+                    .noAccount {
+                        font-size: 1.4em;
+                        letter-spacing: 3px;
+                        font-family: spantaran;
+                    }
+                    #btnConnect {
+                        font-size: 1.2em;
+                        letter-spacing: 3px;
+                        margin-top: -15px;
+                        font-family: spantaran;
+                        border-radius: 40px;
+                        color: $firstColor;
+                        background: transparent;
+                        border: 1px solid $firstColor;
+                        &:hover {
+                            color: $thirdColor;
+                            background: $firstColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 // FONTS
 @font-face {
     font-family: oldRepublic;

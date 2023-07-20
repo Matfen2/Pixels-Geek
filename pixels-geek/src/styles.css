@@ -346,6 +346,191 @@ body {
   transform: scale(1.1);
 }
 
+#logIn {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/pixelsGeekLogIn.png");
+}
+#logIn .modal-dialog {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  display: flex;
+  flex-direction: column;
+}
+#logIn .modal-dialog .pionnier {
+  font-size: 1.6em;
+  text-align: center;
+  font-family: oldRepublic;
+}
+#logIn .modal-dialog .modal-content {
+  margin: 180px auto;
+  width: 100%;
+  max-width: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/modalLogIn.jpg");
+}
+#logIn .modal-dialog .modal-content #btnCloseLogIn {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  font-size: 1.8em;
+  margin-bottom: -30px;
+  transform: translate(-4%, -22%);
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+#logIn .modal-dialog .modal-content #btnCloseLogIn:hover {
+  color: darkred;
+}
+#logIn .modal-dialog .modal-content .modal-body {
+  text-align: center;
+}
+#logIn .modal-dialog .modal-content .modal-body .connect {
+  font-size: 1.6em;
+  letter-spacing: 3px;
+  color: azure;
+  font-family: futureEarth;
+}
+#logIn .modal-dialog .modal-content .modal-body form {
+  display: flex;
+  flex-direction: column;
+}
+#logIn .modal-dialog .modal-content .modal-body form input {
+  width: 60%;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+#logIn .modal-dialog .modal-content .modal-body .listLogIn {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin: 10px auto;
+  margin-bottom: -10px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+#logIn .modal-dialog .modal-content .modal-body .listLogIn .noAccount {
+  font-size: 1.4em;
+  letter-spacing: 3px;
+  font-family: spantaran;
+}
+#logIn .modal-dialog .modal-content .modal-body .listLogIn #btnConnect {
+  font-size: 1.2em;
+  letter-spacing: 3px;
+  margin-top: -15px;
+  font-family: spantaran;
+  border-radius: 40px;
+  color: azure;
+  background: transparent;
+  border: 1px solid azure;
+}
+#logIn .modal-dialog .modal-content .modal-body .listLogIn #btnConnect:hover {
+  color: darkred;
+  background: azure;
+}
+
+#signUp {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/pixelsGeekSignUp.png");
+}
+#signUp .modal-dialog {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  display: flex;
+  flex-direction: column;
+}
+#signUp .modal-dialog .actors {
+  font-size: 1.6em;
+  text-align: center;
+  color: azure;
+  font-family: oldRepublic;
+}
+#signUp .modal-dialog .modal-content {
+  margin: 170px auto;
+  width: 100%;
+  max-width: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/modalLogIn.jpg");
+}
+#signUp .modal-dialog .modal-content #btnCloseSignUp {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  font-size: 1.8em;
+  margin-bottom: -30px;
+  transform: translate(-4%, -22%);
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+#signUp .modal-dialog .modal-content #btnCloseSignUp:hover {
+  color: darkred;
+}
+#signUp .modal-dialog .modal-content .modal-body {
+  text-align: center;
+}
+#signUp .modal-dialog .modal-content .modal-body .inscribe {
+  font-size: 1.6em;
+  letter-spacing: 3px;
+  color: azure;
+  font-family: futureEarth;
+}
+#signUp .modal-dialog .modal-content .modal-body form {
+  display: flex;
+  flex-direction: column;
+}
+#signUp .modal-dialog .modal-content .modal-body form .row .col-lg-6 input {
+  width: 90%;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+#signUp .modal-dialog .modal-content .modal-body .listSignUp {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin: 10px auto;
+  margin-bottom: -10px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+#signUp .modal-dialog .modal-content .modal-body .listSignUp .noAccount {
+  font-size: 1.4em;
+  letter-spacing: 3px;
+  font-family: spantaran;
+}
+#signUp .modal-dialog .modal-content .modal-body .listSignUp #btnConnect {
+  font-size: 1.2em;
+  letter-spacing: 3px;
+  margin-top: -15px;
+  font-family: spantaran;
+  border-radius: 40px;
+  color: azure;
+  background: transparent;
+  border: 1px solid azure;
+}
+#signUp .modal-dialog .modal-content .modal-body .listSignUp #btnConnect:hover {
+  color: darkred;
+  background: azure;
+}
+
 @font-face {
   font-family: oldRepublic;
   src: url("./assets/fonts/OldRepublic.ttf");
