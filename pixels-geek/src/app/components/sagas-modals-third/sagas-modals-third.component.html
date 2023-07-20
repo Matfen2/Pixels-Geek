@@ -2,7 +2,7 @@
 <div *ngFor="let sagaSeven of sagasSeven" class="modal fade" id="bioshock" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content" [id]="sagaSeven.id.toString()">
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <button type="button" id="btnCloseModal" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
       <div class="containSaga">
         <div class="showGame">
           <div class="row">
@@ -11,15 +11,17 @@
             </div>
             <div class="col-lg-8">
               <p class="title">{{ selectedBioshock ? selectedBioshock.title : sagaSeven.title }}</p>
-              <div class="typeGame">
-                <button type="button" id="btnOne">{{ selectedBioshock ? selectedBioshock.typeOne : sagaSeven.typeOne }}</button>
-                <button type="button" id="btnTwo">{{ selectedBioshock ? selectedBioshock.typeTwo : sagaSeven.typeTwo }}</button>
-                <button type="button" id="btnThree">{{ selectedBioshock ? selectedBioshock.typeThree : sagaSeven.typeThree }}</button>
-              </div>
               <p class="describe">{{ selectedBioshock ? selectedBioshock.info : sagaSeven.info }}</p>
               <div class="info">
-                <button type="button" id="btnCritics"><a href="#">TEST</a></button>
+                <div class="typeGame">
+                  <button type="button" id="btnOne">{{ selectedBioshock ? selectedBioshock.typeOne : sagaSeven.typeOne }}</button>
+                  <button type="button" id="btnTwo">{{ selectedBioshock ? selectedBioshock.typeTwo : sagaSeven.typeTwo }}</button>
+                  <button type="button" id="btnThree">{{ selectedBioshock ? selectedBioshock.typeThree : sagaSeven.typeThree }}</button>
+                </div>
+                <div class="test">
+                  <button type="button" id="btnCritics"><a href="#">TEST</a></button>
                 <button type="button" id="btnPrice"><span class="price">{{ selectedBioshock ? selectedBioshock.price : sagaSeven.price }}€</span><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
               </div>
             </div>
           </div>
@@ -45,7 +47,7 @@
 <div *ngFor="let sagaEigth of sagasEigth" class="modal fade" id="cyberpunk2077" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content" [id]="sagaEigth.id.toString()">
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <button type="button" id="btnCloseModal" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
       <div class="containSaga">
         <div class="showGame">
           <div class="row">
@@ -54,15 +56,17 @@
             </div>
             <div class="col-lg-8">
               <p class="title">{{ selectedCyberpunk2077 ? selectedCyberpunk2077.title : sagaEigth.title }}</p>
-              <div class="typeGame">
-                <button type="button" id="btnOne">{{ selectedCyberpunk2077 ? selectedCyberpunk2077.typeOne : sagaEigth.typeOne }}</button>
-                <button type="button" id="btnTwo">{{ selectedCyberpunk2077 ? selectedCyberpunk2077.typeTwo : sagaEigth.typeTwo }}</button>
-                <button type="button" id="btnThree">{{ selectedCyberpunk2077 ? selectedCyberpunk2077.typeThree : sagaEigth.typeThree }}</button>
-              </div>
               <p class="describe">{{ selectedCyberpunk2077 ? selectedCyberpunk2077.info : sagaEigth.info }}</p>
               <div class="info">
-                <button type="button" id="btnCritics"><a href="#">TEST</a></button>
+                <div class="typeGame">
+                  <button type="button" id="btnOne">{{ selectedCyberpunk2077 ? selectedCyberpunk2077.typeOne : sagaEigth.typeOne }}</button>
+                  <button type="button" id="btnTwo">{{ selectedCyberpunk2077 ? selectedCyberpunk2077.typeTwo : sagaEigth.typeTwo }}</button>
+                  <button type="button" id="btnThree">{{ selectedCyberpunk2077 ? selectedCyberpunk2077.typeThree : sagaEigth.typeThree }}</button>
+                </div>
+                <div class="test">
+                  <button type="button" id="btnCritics"><a href="#">TEST</a></button>
                 <button type="button" id="btnPrice"><span class="price">{{ selectedCyberpunk2077 ? selectedCyberpunk2077.price : sagaEigth.price }}€</span><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
               </div>
             </div>
           </div>
@@ -88,7 +92,7 @@
 <div *ngFor="let sagaNine of sagasNine" class="modal fade" id="assassinsCreed" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content" [id]="sagaNine.id.toString()">
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <button type="button" id="btnCloseModal" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
       <div class="containSaga">
         <div class="showGame">
           <div class="row">
@@ -97,15 +101,17 @@
             </div>
             <div class="col-lg-8">
               <p class="title">{{ selectedAssassinsCreed ? selectedAssassinsCreed.title : sagaNine.title }}</p>
-              <div class="typeGame">
-                <button type="button" id="btnOne">{{ selectedAssassinsCreed ? selectedAssassinsCreed.typeOne : sagaNine.typeOne }}</button>
-                <button type="button" id="btnTwo">{{ selectedAssassinsCreed ? selectedAssassinsCreed.typeTwo : sagaNine.typeTwo }}</button>
-                <button type="button" id="btnThree">{{ selectedAssassinsCreed ? selectedAssassinsCreed.typeThree : sagaNine.typeThree }}</button>
-              </div>
               <p class="describe">{{ selectedAssassinsCreed ? selectedAssassinsCreed.info : sagaNine.info }}</p>
               <div class="info">
-                <button type="button" id="btnCritics"><a href="#">TEST</a></button>
+                <div class="typeGame">
+                  <button type="button" id="btnOne">{{ selectedAssassinsCreed ? selectedAssassinsCreed.typeOne : sagaNine.typeOne }}</button>
+                  <button type="button" id="btnTwo">{{ selectedAssassinsCreed ? selectedAssassinsCreed.typeTwo : sagaNine.typeTwo }}</button>
+                  <button type="button" id="btnThree">{{ selectedAssassinsCreed ? selectedAssassinsCreed.typeThree : sagaNine.typeThree }}</button>
+                </div>
+                <div class="test">
+                  <button type="button" id="btnCritics"><a href="#">TEST</a></button>
                 <button type="button" id="btnPrice"><span class="price">{{ selectedAssassinsCreed ? selectedAssassinsCreed.price : sagaNine.price }}€</span><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
               </div>
             </div>
           </div>

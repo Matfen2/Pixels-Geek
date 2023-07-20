@@ -1,8 +1,8 @@
 <div class="modal fade" id="logIn">
+    <button type="button" id="btnCloseLogIn" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <p class="pionnier">"Nous sommes les pionniers des mondes numériques"</p>
         <div class="modal-content">
-            <button type="button" id="btnCloseLogIn" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
             <div class="modal-body">
                 <p class="connect">Connectez-vous :</p>
                 <form action="/logIn" method="post">
@@ -22,10 +22,10 @@
 </div>
 
 <div class="modal fade" id="signUp">
+    <button type="button" id="btnCloseSignUp" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
     <div class="modal-dialog modal-dialog-centered modal-xl">
         <p class="actors">"Nous sommes acteurs de nos propres aventures"</p>
         <div class="modal-content">
-            <button type="button" id="btnCloseSignUp" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
             <div class="modal-body">
                 <p class="inscribe">Inscrivez-vous :</p>
                 <form action="/signUp" method="post">
@@ -41,12 +41,12 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
-                            <label for="prénom"></label>
-                            <input type="text" name="prénom" id="prénom" placeholder="Votre Prénom" required>
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" placeholder="Votre Adresse Email" required>
                         </div>
                         <div class="col-lg-6">
-                            <label for="nom"></label>
-                            <input type="text" name="nom" id="nom" placeholder="Votre Nom" required>
+                            <label for="password"></label>
+                            <input type="password" name="password" id="password" placeholder="Votre Mot de Passe" required>
                         </div>
                     </div>
                 </form>

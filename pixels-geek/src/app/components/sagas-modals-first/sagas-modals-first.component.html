@@ -56,15 +56,17 @@
             </div>
             <div class="col-lg-8">
               <p class="title">{{ selectedDoom ? selectedDoom.title : sagaTwo.title }}</p>
-              <div class="typeGame">
-                <button type="button" id="btnOne">{{ selectedDoom ? selectedDoom.typeOne : sagaTwo.typeOne }}</button>
-                <button type="button" id="btnTwo">{{ selectedDoom ? selectedDoom.typeTwo : sagaTwo.typeTwo }}</button>
-                <button type="button" id="btnThree">{{ selectedDoom ? selectedDoom.typeThree : sagaTwo.typeThree }}</button>
-              </div>
               <p class="describe">{{ selectedDoom ? selectedDoom.info : sagaTwo.info }}</p>
               <div class="info">
-                <button type="button" id="btnCritics"><a href="#">TEST</a></button>
+                <div class="typeGame">
+                  <button type="button" id="btnOne">{{ selectedDoom ? selectedDoom.typeOne : sagaTwo.typeOne }}</button>
+                  <button type="button" id="btnTwo">{{ selectedDoom ? selectedDoom.typeTwo : sagaTwo.typeTwo }}</button>
+                  <button type="button" id="btnThree">{{ selectedDoom ? selectedDoom.typeThree : sagaTwo.typeThree }}</button>
+                </div>
+                <div class="test">
+                  <button type="button" id="btnCritics"><a href="#">TEST</a></button>
                 <button type="button" id="btnPrice"><span class="price">{{ selectedDoom ? selectedDoom.price : sagaTwo.price }}€</span><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
               </div>
             </div>
           </div>
@@ -99,15 +101,17 @@
             </div>
             <div class="col-lg-8">
               <p class="title">{{ selectedGodOfWar ? selectedGodOfWar.title : sagaThird.title }}</p>
-              <div class="typeGame">
-                <button type="button" id="btnOne">{{ selectedGodOfWar ? selectedGodOfWar.typeOne : sagaThird.typeOne }}</button>
-                <button type="button" id="btnTwo">{{ selectedGodOfWar ? selectedGodOfWar.typeTwo : sagaThird.typeTwo }}</button>
-                <button type="button" id="btnThree">{{ selectedGodOfWar ? selectedGodOfWar.typeThree : sagaThird.typeThree }}</button>
-              </div>
               <p class="describe">{{ selectedGodOfWar ? selectedGodOfWar.info : sagaThird.info }}</p>
               <div class="info">
-                <button type="button" id="btnCritics"><a href="#">TEST</a></button>
+                <div class="typeGame">
+                  <button type="button" id="btnOne">{{ selectedGodOfWar ? selectedGodOfWar.typeOne : sagaThird.typeOne }}</button>
+                  <button type="button" id="btnTwo">{{ selectedGodOfWar ? selectedGodOfWar.typeTwo : sagaThird.typeTwo }}</button>
+                  <button type="button" id="btnThree">{{ selectedGodOfWar ? selectedGodOfWar.typeThree : sagaThird.typeThree }}</button>
+                </div>
+                <div class="test">
+                  <button type="button" id="btnCritics"><a href="#">TEST</a></button>
                 <button type="button" id="btnPrice"><span class="price">{{ selectedGodOfWar ? selectedGodOfWar.price : sagaThird.price }}€</span><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
               </div>
             </div>
           </div>

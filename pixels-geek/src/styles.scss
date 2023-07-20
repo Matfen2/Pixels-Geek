@@ -45,6 +45,7 @@ $sixColor: #9b0000;
                         font-size: 1.5em;
                         color: $firstColor;
                         font-family: spantaran;
+                        text-shadow: 2px 2px 2px #CE1010;
                         &:hover {
                             opacity: 0.8;
                         }
@@ -56,6 +57,7 @@ $sixColor: #9b0000;
                     color: $firstColor;
                     border: transparent;
                     background: transparent;
+                    text-shadow: 2px 2px 2px #CE1010;
                     &:hover {
                         opacity: 0.8;
                     }
@@ -101,6 +103,7 @@ $sixColor: #9b0000;
     
 }
 
+// WHY
 .why {
     height: 120px;
     background-color: rgb(51, 51, 51);
@@ -117,6 +120,7 @@ $sixColor: #9b0000;
     }
 }
 
+// NEWS
 .news {
     position: relative;
     width: 100%;
@@ -247,7 +251,7 @@ $sixColor: #9b0000;
     }
 }
 
-// NEWS
+// ARTICLES
 #tlouArticle, #rdrArticle, #ac4BlackFlagArticle, #cyberpunk2077Article {
     .modal-dialog {
         display: flex;
@@ -317,6 +321,7 @@ $sixColor: #9b0000;
                 top: -7%;
                 right: -2%;
                 font-size: 1.9em;
+                margin-bottom: -5px;
                 color: $firstColor;
                 border: transparent;
                 background: transparent;
@@ -353,6 +358,7 @@ $sixColor: #9b0000;
                             .info {
                                 display: flex;
                                 column-gap: 120px;
+                                margin-top: 35px;
                                 align-items: center;
                                 flex-direction: row;
                                 justify-content: center;
@@ -360,10 +366,59 @@ $sixColor: #9b0000;
                                     display: flex;
                                     align-items: center;
                                     flex-direction: row;
+                                    margin-top: 5px;
                                     #btnOne, #btnTwo, #btnThree {
-                                        padding: 5px;
+                                        font-size: 1.2em;
+                                        letter-spacing: 3px;
+                                        margin-top: -15px;
+                                        font-family: spantaran;
+                                        color: $firstColor;
                                         background: transparent;
-                                        font-family: spantaran;;
+                                        border: 1px solid $firstColor;
+                                        &:hover {
+                                            color: $thirdColor;
+                                            background: $firstColor;
+                                        }
+                                    }
+                                }
+                                .test {
+                                    margin-top: -10px;
+                                    #btnCritics {
+                                        font-size: 1.2em;
+                                        letter-spacing: 3px;
+                                        margin-top: -15px;
+                                        margin-right: 20px;
+                                        font-family: spantaran;
+                                        color: $fourColor;
+                                        background: darkgreen;
+                                        border: 1px solid $firstColor;
+                                        &:hover {
+                                            color: $thirdColor;
+                                            background: $firstColor;
+                                        }
+                                        a {
+                                            color: $firstColor;
+                                            text-decoration: none;
+                                            &:hover {
+                                                color: $thirdColor;
+                                            }
+                                        }
+                                    }
+                                    #btnPrice {
+                                        font-size: 0.8em;
+                                        letter-spacing: 3px;
+                                        margin-top: -15px;
+                                        font-family: oldRepublic;
+                                        color: $firstColor;
+                                        background: transparent;
+                                        border: 1px solid $firstColor;
+                                        .fa-solid {
+                                            margin-left: 10px;
+                                            font-size: 1.2em;
+                                            &:hover {
+                                                color: $thirdColor;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -374,12 +429,13 @@ $sixColor: #9b0000;
                     margin: 30px auto;
                     margin-bottom: 5px;
                     .row {
+                        justify-content: center;
                         .col-lg-2 {
                             .img-fluid {
                                 cursor: pointer;
                                 opacity: 0.8;
-                                height: 160px;
-                                max-width: 150px;
+                                height: 180px;
+                                max-width: 550px;
                                 transition: all 0.25ms ease;
                                 &:hover {
                                     opacity: 1.0;
@@ -402,6 +458,19 @@ $sixColor: #9b0000;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('/assets/picts/pixelsGeekLogIn.png');
+    #btnCloseLogIn {
+        position: absolute;
+        top: 3%;
+        right: 0%;
+        font-size: 1.8em;
+        color: $thirdColor;
+        border: transparent;
+        transform: translate(-50%, -50%);
+        background: transparent;
+        &:hover {
+            color: $firstColor;
+        }
+    }
     .modal-dialog {
         position: absolute;
         top: 35%;
@@ -410,32 +479,20 @@ $sixColor: #9b0000;
         display: flex;
         flex-direction: column;
         .pionnier {
-        font-size: 1.6em;
-        text-align: center;
-        font-family: oldRepublic;
+            font-size: 1.9em;
+            color: $firstColor;
+            text-align: center;
+            font-family: oldRepublic;
+            text-shadow: 2px 2px 2px #CE1010;
         }
         .modal-content {
-            margin: 180px auto;
+            margin: 170px auto;
             width: 100%;
             max-width: 500px;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-image: url('/assets/picts/modalLogIn.jpg');
-            #btnCloseLogIn {
-                position: relative;
-                top: 30%;
-                left: 50%;
-                font-size: 1.8em;
-                margin-bottom: -30px;
-                transform: translate(-4%, -22%);
-                color: $firstColor;
-                border: transparent;
-                background: transparent;
-                &:hover {
-                    color: $thirdColor;
-                }
-            }
             .modal-body {
                 text-align: center;
                 .connect {
@@ -446,6 +503,7 @@ $sixColor: #9b0000;
                 }
                 form {
                     display: flex;
+                    margin-top: -10px;
                     flex-direction: column;
                     input {
                         width: 60%;
@@ -493,6 +551,19 @@ $sixColor: #9b0000;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('/assets/picts/pixelsGeekSignUp.png');
+    #btnCloseSignUp {
+        position: absolute;
+        top: 3%;
+        right: 0%;
+        font-size: 1.8em;
+        color: $thirdColor;
+        border: transparent;
+        transform: translate(-50%, -50%);
+        background: transparent;
+        &:hover {
+            color: $firstColor;
+        }
+    }
     .modal-dialog {
         position: absolute;
         top: 35%;
@@ -501,10 +572,11 @@ $sixColor: #9b0000;
         display: flex;
         flex-direction: column;
         .actors {
-        font-size: 1.6em;
+        font-size: 1.9em;
         text-align: center;
         color: $firstColor;
         font-family: oldRepublic;
+        text-shadow: 2px 2px 2px #CE1010;
         }
         .modal-content {
             margin: 170px auto;
@@ -513,21 +585,7 @@ $sixColor: #9b0000;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-image: url('/assets/picts/modalLogIn.jpg');
-            #btnCloseSignUp {
-                position: relative;
-                top: 30%;
-                left: 50%;
-                font-size: 1.8em;
-                margin-bottom: -30px;
-                transform: translate(-4%, -22%);
-                color: $firstColor;
-                border: transparent;
-                background: transparent;
-                &:hover {
-                    color: $thirdColor;
-                }
-            }
+            background-image: url('/assets/picts/modalSignUp.jpg');
             .modal-body {
                 text-align: center;
                 .inscribe {
@@ -538,6 +596,7 @@ $sixColor: #9b0000;
                 }
                 form {
                     display: flex;
+                    margin-top: -10px;
                     flex-direction: column;
                     .row {
                         .col-lg-6 {
@@ -595,14 +654,4 @@ $sixColor: #9b0000;
 @font-face {
     font-family: futureEarth;
     src: url('./assets/fonts/futureEarth.ttf');
-}
-
-@font-face {
-    font-family: soleSurvivor;
-    src: url('./assets/fonts/SoleSurvivor.ttf');
-}
-
-@font-face {
-    font-family: cyberpunk;
-    src: url('./assets/fonts/Cyberpunk.ttf');
 }
