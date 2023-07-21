@@ -5,6 +5,7 @@
         <img src="/assets/picts/pixelsGeekLogo.png" class="img-fluid w-100" alt="pixelsGeekLogo" />
       </a>
     </div>
+    <button type="button" id="btnBar" data-bs-toggle="offcanvas" data-bs-target="#showUnivers"><i class="fas fa-bars"></i></button>
     <ul class="navbar-nav">
       <li class="nav-item">
         <a href="##" class="nav-link">JEUX</a>
@@ -25,7 +26,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="row">
-            <div *ngFor="let saga of sagasOne" class="col-lg-4">
+            <div *ngFor="let saga of sagasOne" class="col-lg-4 col-md-4 col-sm-4">
               <img
                 [src]="saga.logo"
                 alt="pictSaga"
@@ -39,7 +40,7 @@
         </div>
         <div class="carousel-item">
           <div class="row">
-            <div *ngFor="let saga of sagasTwo" class="col-lg-4">
+            <div *ngFor="let saga of sagasTwo" class="col-lg-4 col-md-4 col-sm-4">
               <img
                 [src]="saga.logo"
                 alt="pictSaga"
@@ -53,7 +54,7 @@
         </div>
         <div class="carousel-item">
           <div class="row">
-            <div *ngFor="let saga of sagasThree" class="col-lg-4">
+            <div *ngFor="let saga of sagasThree" class="col-lg-4 col-md-4 col-sm-4">
               <img
                 [src]="saga.logo"
                 alt="pictSaga"
@@ -74,6 +75,28 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+    </div>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-end" id="showUnivers">
+  <div class="offcanvas-body">
+    <button type="button" id="btnCloseOffcanvas" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
+    <div class="navbar navbar-expand navbar-lg">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="##" class="nav-link">JEUX</a>
+        </li>
+        <li class="nav-item">
+          <a href="##" class="nav-link">VETEMENTS</a>
+        </li>
+        <li class="nav-item">
+          <a href="##" class="nav-link">GOODIES</a>
+        </li>
+        <button type="button" id="btnAccount" data-bs-toggle="modal" data-bs-target="#logIn">
+          <i class="fa-solid fa-user"></i>
+        </button>
+      </ul>
     </div>
   </div>
 </div>
