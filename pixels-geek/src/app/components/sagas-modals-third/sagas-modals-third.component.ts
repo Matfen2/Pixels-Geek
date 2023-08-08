@@ -47,7 +47,7 @@ export class SagasModalsThirdComponent {
       title: 'Bioshock (2007) par Irrational Games',
       typeOne: 'FPS',
       typeTwo: 'Immersive Sim',
-      typeThree: 'Riche en récits',
+      typeThree: 'Narratifs',
       info: "Jeu de tir à la première personne (FPS), Bioshock vous entraîne dans les profondeurs de l'océan atlantique pour explorer les ruines d'une gigantesque cité sous-marine ravagée par la folie de ses créateurs. Perdu au cœur de cette dystopie mâtinée d'abomination scientifique, le joueur devra lutter à l'aide de plasmides (sortes de modules qui modifient l'ADN afin d'acquérir de puissants pouvoirs) contre des habitants qui ont depuis longtemps renié leur humanité.",
       price: 14.99,
     },

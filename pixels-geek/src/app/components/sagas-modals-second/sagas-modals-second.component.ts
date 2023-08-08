@@ -53,8 +53,7 @@ export class SagasModalsSecondComponent {
     },
     {
       id: 2,
-      pictGame:
-        '/assets/picts/modals/theLastOfUs/theLastOfUsRemastered.jpg',
+      pictGame: '/assets/picts/modals/theLastOfUs/theLastOfUsRemastered.jpg',
       title: 'The Last Of Us Remastered (2014) par Naughty Dogs',
       typeOne: 'TPS',
       typeTwo: 'Action/Aventure',
@@ -81,7 +80,7 @@ export class SagasModalsSecondComponent {
       typeThree: 'Narratifs',
       info: "The Last of Us Part I est un remake du jeu The Last of Us, sorti en 2013. Développé par Naughty Dog, le jeu propose une aventure technique refaite à partir de zéro et sublimée grâce aux nouvelles technologies de la PlayStation 5. L'intelligence a aussi été totalement refaite, tandis que l'expérience comprend une compatibilité avec l'audio 3D, les retours haptiques ou les gâchettes adaptatives. Les effets, l'exploration et les combats ont aussi été améliorés.",
       price: 54.99,
-    }
+    },
   ];
 
   // THE WITCHER
@@ -135,7 +134,7 @@ export class SagasModalsSecondComponent {
       typeThree: 'Narratifs',
       info: "Thronebreaker : The Witcher Tales est un jeu de cartes se déroulant sous la forme d'une campagne solo scénarisée. On suivra l'histoire de Meve, la reine des Royaumes Nordiques, dans son combat pour bouter hors de ses terres une invasion barbare. Explorez des endroits inédits du monde de The Witcher, avec une carte interactive dessinée main, et des cartes de jeu spécialement conçues pour chacune des situations que devrez affronter.",
       price: 19.99,
-    }
+    },
   ];
 
   // Mass Effect
@@ -146,7 +145,7 @@ export class SagasModalsSecondComponent {
       title: 'Mass Effect (2007) par Bioware',
       typeOne: 'RPG',
       typeTwo: 'Action-RPG',
-      typeThree: 'Riche en récits',
+      typeThree: 'Narratifs',
       info: "Mass Effect est un Action-RPG futuriste se déroulant dans l'espace. Le joueur y crée son personnage avant de partir à l'aventure dans l'espace et de découvrir toutes sortes de peuples et de quêtes, ainsi qu'un scénario complexe aux multiples ramifications.",
       price: 5.99,
     },
@@ -190,7 +189,7 @@ export class SagasModalsSecondComponent {
       typeThree: 'Narratifs',
       info: 'Mass Effect : Legendary Edition est une compilation des trois jeux Mass Effect par Bioware remastérisés avec de nouvelles options graphiques, techniques et tout le contenu aditionnel disponible. Cette compilation offre une version modernisée de la trilogie composé par Mass Effect 1, 2 et 3.',
       price: 43.99,
-    }
+    },
   ];
 
   // Propriétés pour stocker les jeux sélectionnés par défaut

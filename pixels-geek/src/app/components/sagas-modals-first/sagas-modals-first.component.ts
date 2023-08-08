@@ -100,7 +100,7 @@ export class SagasModalsFirstComponent {
       typeThree: 'Multijoueur',
       info: "Nouvelle entrée dans la série Fallout, ce Fallout 76 se présente comme un jeu multijoueur de survie. Découvrez les secrets de la Virginie-Occidentale en prenant part à une quête principale immersive qui commence dès votre sortie de l'abri 76. Faites-vous des amis ou trahissez vos nouveaux voisins venus pour reconstruire, et voyez les Appalaches du point de vue de ses résidents.",
       price: 9.99,
-    }
+    },
   ];
 
   // DOOM
@@ -204,7 +204,7 @@ export class SagasModalsFirstComponent {
       pictGame: '/assets/picts/modals/godOfWar/godOfWar.jpg',
       title: 'God Of War (2018) par Santa Monica Studio',
       typeOne: 'Action-Aventure',
-      typeTwo: 'Riche ne Récits',
+      typeTwo: 'Narratifs',
       typeThree: 'Fun',
       info: "Dans ce nouvel épisode de God Of War, le héros évoluera dans un monde aux inspirations nordiques, très forestier et montagneux. Dans ce beat-them-all, un enfant accompagnera le héros principal, pouvant apprendre des actions du joueur, et même gagner de l'expérience.",
       price: 9.99,
@@ -214,7 +214,7 @@ export class SagasModalsFirstComponent {
       pictGame: '/assets/picts/modals/godOfWar/godOfWarRagnarok.jpg',
       title: 'God Of War Ragnarok (2022) par Santa Monica Studio',
       typeOne: 'Action-Aventure',
-      typeTwo: 'Riche ne Récits',
+      typeTwo: 'Narratifs',
       typeThree: 'Fun',
       info: "God of War : Ragnarok est un jeu d'action sur PS5 développé par Santa Monica, qui fait suite au soft reboot de la série God of War sur PS4. Le Ragnarök, célèbre événement de la mythologie nordique est ici la toile de fond scénaristique du jeu.",
       price: 9.99,
